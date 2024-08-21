@@ -1,0 +1,6 @@
+git add config.txt
+git commit -m "Copy config.txt from feature-branch to main"
+git config core.sparseCheckout true
+echo "path/to/file" >> .git/info/sparse-checkout
+git read-tree -m -u HEAD
+
